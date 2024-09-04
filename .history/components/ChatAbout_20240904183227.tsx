@@ -6,7 +6,8 @@ export default function ChatAbout() {
 			<div className="text-center space-y-5">
 				<h1 className="text-3xl font-bold">Welcome to ASCE</h1>
 				<p className="w-96">
-					All hate to sadists. 
+					This is a chat application that power by supabase realtime
+					db. Login to send message
 				</p>
 			</div>
 		</div>
