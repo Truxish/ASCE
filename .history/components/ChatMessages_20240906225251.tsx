@@ -3,7 +3,7 @@ import ListMessages from "./ListMessages"
 import { supabaseServer } from "@/lib/supabase/server"
 import InitMessages from "@/lib/store/InitMessages"
 import { LIMIT_MESSAGE } from "@/lib/constant"
-import { Imessage } from "../lib/store/messages" // Make sure to import Imessage type
+import { Imessage } from "@/lib/store/InitMessages" // Make sure to import Imessage type
 
 export default async function ChatMessages() {
   const supabase = supabaseServer()
