@@ -32,9 +32,8 @@ export default function ChatHeader({ user }: { user: User | undefined }) {
 				<div>
 					<h1 className="text-xl font-bold">Anti Sadistic Communication Line</h1>
 					<ChatPresence />
-					
+					<ThemeToggle />
 				</div>
-				<ThemeToggle />
 				{user ? (
 					<Button onClick={handleLogout}>Logout</Button>
 				) : (

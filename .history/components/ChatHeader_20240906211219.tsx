@@ -5,7 +5,6 @@ import { supabaseBrowser } from "@/lib/supabase/browser";
 import { User } from "@supabase/supabase-js";
 import { useRouter } from "next/navigation";
 import ChatPresence from "./ChatPresence";
-import { ThemeToggle } from "./ThemeToggle";
 
 export default function ChatHeader({ user }: { user: User | undefined }) {
 	const router = useRouter();
@@ -32,9 +31,7 @@ export default function ChatHeader({ user }: { user: User | undefined }) {
 				<div>
 					<h1 className="text-xl font-bold">Anti Sadistic Communication Line</h1>
 					<ChatPresence />
-					
 				</div>
-				<ThemeToggle />
 				{user ? (
 					<Button onClick={handleLogout}>Logout</Button>
 				) : (
